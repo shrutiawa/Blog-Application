@@ -1,0 +1,330 @@
+.ref{ 
+    max-width:100%;
+    background-color: rgb(36, 35, 46);
+}
+footer{
+    max-width:100%;
+    height: 50px;
+    background-color: rgb(0,0,0);
+}
+.ref1{
+    max-width:1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:60px auto;
+    padding-top: 40px;
+    align-items: center;
+}
+.ref1 section{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    justify-content: space-between;
+    
+}
+.ref1 section #text{
+    color: lightgray;
+    font-size: 12px;
+    width:100%;
+
+}
+#subscribe{
+    height:30px;
+    display: flex;
+    flex-direction: column;  
+    gap:5px; 
+    width:50%
+}
+#subscribe .errorMessage{
+    color:rgb(231, 6, 6);
+}
+#sub{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+#sub #email{
+    width:100%;
+    height: 30px;
+    
+}
+#sub .red-btn{
+    height: 100%;
+    padding:0px 10px;
+    background-color: rgb(44, 44, 247);
+    border-color: rgb(44, 44, 247);
+    
+}
+.text2{
+    font-size: 10px;
+    color: rgb(143, 139, 139);
+    text-align: right;
+}
+hr{
+    
+    margin:60px auto;
+    background-color: rgb(60, 61, 61);
+    max-width: 1198px;
+}
+.ref2,.ref3{
+    display: flex;
+    flex-direction:row;
+    margin:0px auto;
+    margin-top: 20px;
+    max-width:1200px;
+ 
+}
+.ref2-heading,.ref3-heading{
+    font-weight: bold;
+    color:white;
+    font-size: 12px;
+    font-family: sans-serif;
+    width:100%;
+}
+.ref2-heading:first-of-type{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    gap:30%;
+}
+
+#post .red-label{
+    font-size: 12px;
+    background-color: rgb(205, 36, 36);
+    align-items: center;
+    height: auto;
+    padding: 3px 6px;
+    box-sizing:border-box;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.red-label1{
+    font-size: 12px;
+    background-color: rgb(205, 36, 36);
+    padding:1px 4px;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+#post:nth-of-type(2) .red-btn{
+    font-size: 10px;
+    align-items: center;
+    height:auto;
+    width:auto;
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+#post div:first-of-type{
+    height:auto;
+    padding:10px;
+    width:230px;
+    padding-left: 0px;
+}
+#post div:nth-of-type(2){
+    height:auto;
+    width: auto;
+    font-size: 10px;
+    color: lightgray;
+    font-weight: lighter;
+}
+.list section{
+    margin-top: 30px ;
+}
+.list section div:not(div:first-of-type){
+    margin-top: 10px;
+}
+.list section div{
+    font-weight: lighter;
+    color:lightgray;
+    font-size: 12px;
+}
+.list section div .red-btn{
+    height:auto;
+    width:auto;
+    font-size: 10px;
+    align-items: center;
+}
+
+.ref2-heading:nth-child(3){
+    margin-left: 8%;
+}
+.ref2-heading:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+}
+.ref2-heading:nth-child(4) div:first-of-type{
+    font-weight: lighter;
+    color: lightgray;
+    text-align: left;
+}
+.ref2-heading:nth-child(4) div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.ref2-heading:nth-child(4) div:nth-child(2) img{
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.ref3{
+    flex-direction: column;
+}
+.ref3-heading{
+    height: auto;
+    width: auto;
+} 
+.topics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:white;
+    gap:5px;
+    margin-top: 20px;  
+}
+.topics div{
+    height: 20px;
+    width: auto;
+    font-size: 12px;
+    font-weight: bold;
+    padding:2px;
+    text-align: center;
+}
+
+.topics div:first-child, div:nth-child(16){
+    text-align: left;
+}
+footer{
+    color:antiquewhite;
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer #footer{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+#footer div{
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.image-hover:hover{
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 6px 5px grey;
+    transform: scale(1.05);
+
+}
+
+@media (max-width: 768px) {
+    
+    .main-container{
+        width: 95%;
+    }
+    .footer-container{
+      width: 95%;
+    }
+    .ref{
+        max-width: 100%;
+        /* height: 1300px; */
+        background-color: rgb(36, 35, 46);;
+        
+    }
+    .ref1{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        margin:0;
+        
+        align-items: flex-start;
+        
+    }
+    .ref1 #logo{
+        padding-left:0 ;
+    }
+    .ref1 section{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        justify-content: left;
+    }
+    #subscribe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #subscribe .text2{
+        text-align: left;
+    }
+    #sub{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    #sub #email{
+        margin-top: 10px;
+        width:100%;
+        height:25px;
+    }
+    hr{
+        max-width: 96%;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+    .ref2{
+        display: flex;
+        flex-direction: column;
+        
+        gap:20px;
+    }
+    .ref2-heading{
+        margin-top: 20px;
+    }
+    .ref2-heading:nth-child(3),.ref2-heading:nth-child(4){
+        margin: 0;
+    }
+    .ref3{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 20px;
+      
+    }
+    
+    .topics,.topics div{
+        margin-top: 0;
+        text-align: left;
+        gap:2%;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 0;
+        width: auto;
+    }
+    footer #footer1{
+        display: none;
+    }
+    #footer div{
+       gap: 0;
+       margin: auto;
+    }
+}

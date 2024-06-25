@@ -1,0 +1,182 @@
+/* Comments section CSS */
+.clr{
+    clear: both;
+  }
+  
+  .ol ol{
+    padding-left: 20px;
+  }
+  .ol li,ol li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .ol{
+    padding:0px;
+    margin-top: 0px;
+    list-style: none;
+    display: block;
+  }
+  .image img{
+    
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+   
+  }
+  .image{
+    float:left;
+    padding:5px;
+    max-width: 50px;
+  }
+  .content-comments{
+    float: left;
+    margin:5px;
+    padding:5px;
+    
+  }
+  .content-comments p{
+    display: inline;
+  
+    font-size: 16px;
+  
+    padding:2px;
+  }
+  .content1{
+    float: none;
+    display: inline-block;
+  }
+  .content1 p{
+    display: inline;
+  
+    font-size: 16px;
+  
+    padding:2px;
+  }
+  .content-comments p:first-child , .content1 p:first-child{
+    display: block;
+    margin:0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .reply{
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .content-comments p:last-child , .content1 p:last-child{
+    display: block;
+    width:100%;
+  }
+  .clr{
+    clear: both;
+  }
+  .comments{
+    display: flex;
+    width:100%;
+  }
+  .comments1{
+    display: flex;
+  }
+  .form-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:5px 0px;
+  }
+  .form-container input{
+    border: 1px solid #edede9;
+  }
+  .form-container .name{
+  
+    padding:10px 0px;
+    width:50%;
+  }
+  .form-container .name input{
+    width:95%;
+    height:40px;
+    border-radius: 5px;
+  }
+  .form-container .email{
+    
+    padding:10px 0px;
+    width:50%;
+  }
+  .form-container .email input{
+    width:95%;
+    height:40px;
+    border-radius: 5px;
+  }
+  .form-container label:after{
+    content: "*";
+    color:red
+  }
+  .check{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+  }
+  .textarea textarea{
+    margin:10px 0px;
+    border: 1px solid #edede9;
+    width:97.5%;
+    resize: none;
+  }
+  .textarea label:after{
+    content: "*";
+    color:red
+  }
+  .btn-comment{
+    background: #3a86ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding:10px 15px;
+    cursor: pointer;
+  }
+  .btn-comment:hover{
+    background: #0096c7;
+  }
+  .delete-comment {
+    background-color: rgb(205, 36, 36);;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .disabled-form input,
+.disabled-form textarea,
+.disabled-form button {
+  cursor: not-allowed;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  color: #888;
+}
+.form-container.disabled-form {
+    pointer-events: none;
+    opacity: 0.7; 
+  }
+.comments-main{
+  margin-top: 20px;
+}
+
+  @media (max-width: 768px) {
+    .form-container{
+      display: block;
+    }
+    .form-container .name{
+      display: block;
+      padding:10px 0px;
+      width:100%;
+    }
+    .form-container .email{
+      display: block;
+      padding:10px 0px;
+      width:100%;
+    }
+  }

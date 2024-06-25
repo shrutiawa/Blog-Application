@@ -1,0 +1,91 @@
+
+{
+    "blogs": [
+        {
+            "id": "1234567890",
+            "tags": [
+                "react",
+                "react-router",
+                "router",
+                "Javascrtipt",
+                "web"
+            ],
+            "user": {
+                "id": "23143",
+                "name": "Jhon Doe",
+                "username": "JDoe"
+            },
+            "title": "The useLoaderHook",
+            "modified": "2008-03-17T03:53:36Z",
+            "bannerUrl": "https://via.placeholder.com/980x360",
+            "published": true,
+            "sponsored": false,
+            "description": "The useLoaderHook from react-router helps achieve the same functionality with minimal effort. These are some examples of why you should use it.Loading state management Loaders handle the loading state for you, providing a clear indication of when data is being fetched. This helps you manage loading spinners, progress indicators, or any other UI elements related to data loading. <br/> Error handling Loaders often include error handling mechanisms, allowing you to handle and display errors that occur during the data loading process. "
+        },
+        {
+            "id": "123460",
+            "tags": [
+                "chrome",
+                "chrome-devtools",
+                "tool",
+                "troubleshooting",
+                "debug"
+            ],
+            "user": {
+                "id": "2313",
+                "name": "zlatan",
+                "username": "zlatanI"
+            },
+            "title": "Use Chrome DevTools Like a Senior Frontend Developer",
+            "modified": "2008-03-17T03:53:36Z",
+            "bannerUrl": "https://via.placeholder.com/980x360",
+            "published": false,
+            "sponsored": false,
+            "description": "In our work, we often need to debug the interface with back-end developers. Using this function can improve our docking efficiency.<br/>You just need to do these steps：<br/>1.Select the Network panel<br/>2.Click Fetch/XHR<br/>3.Select the request you want to resend<br/>4.Right-click and select Replay XHR"
+        },
+        {
+            "id": "123456780",
+            "tags": [
+                "chrome",
+                "chrome-devtools",
+                "tool",
+                "troubleshooting",
+                "debug"
+            ],
+            "user": {
+                "id": "2314",
+                "name": "Kante",
+                "username": "KanteG"
+            },
+            "title": "JavaScript Closures",
+            "modified": "2008-03-17T03:53:36Z",
+            "bannerUrl": "https://via.placeholder.com/980x360",
+            "published": true,
+            "sponsored": true,
+            "description": "Closures in JavaScript must be one of the most terrifying features of the language. Even the omniscient ChatGPT will tell you that. It’s also probably one of the most hidden language concepts. We use it every time we write any React code, most of the time without even realizing it. But there is no getting away from them in the end: if we want to write complex and performant React apps, we have to know closures."
+        },
+        {
+            "id": "1356780",
+            "tags": [
+                "code",
+                "reviews",
+                "code-reviews",
+                "teams",
+                "developer",
+                "development"
+            ],
+            "user": {
+                "id": "2334343",
+                "name": "Dominik",
+                "username": "DominikS"
+            },
+            "title": "13 Code Review Standards",
+            "modified": "2006-03-17T03:53:36Z",
+            "bannerUrl": "https://via.placeholder.com/980x360",
+            "published": false,
+            "sponsored": false,
+            "description": "In this article, we will briefly go through 13 code review standards that could dramatically help improve the health of your software as well as keep your developers happy.<br/>As the name suggests, code review is a process where one or more developers review or screen the code written by another developer (the author) to ensure that:<ul><li>the code does not have any mistakes, and there are no bugs or issues</li><li>it meets all the quality and styling guide requirements and standards</li><li>the code does what it is intended to do</li><li>when merged, it will leave the health of the codebase in a better state</li></ul>"
+        }
+    ]
+
+}

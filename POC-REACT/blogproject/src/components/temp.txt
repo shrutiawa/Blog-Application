@@ -1,0 +1,164 @@
+import "../style/posts.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass, faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import Pagination from "./pagination";
+
+
+const PostList = () => {
+    const navigate = useNavigate();
+    const size=5;
+    //const [posts, setPosts] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [filteredPostList, setFilteredPostList] = useState([]);
+    const [sortCriteria, setSortCriteria] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+    const [postsPerPage, setpostsPerPage] = useState([]);
+
+    const rowStyle = {
+        backgroundColor: '#ffffff',
+        height: '40px', // Set your desired height
+    };
+    const buttonStyle = {
+        padding: '5px 10px',
+        marginRight: '5px',
+        cursor: 'pointer',
+        borderRadius: '50%',
+        border: '1px solid #ccc',
+        backgroundColor: 'whitesmoke',
+        
+    };
+
+    
+
+  useEffect(() => {
+    // Retrieve data from localStorage when the component mounts
+    const storedPosts = JSON.parse(localStorage.getItem('createPost')) || [];
+    //setPosts(storedPosts);
+    setFilteredPostList(storedPosts);
+  }, []);
+
+  /* useEffect(() => {
+    const startIndex = (currentPage - 1) *size;
+    const endIndex = startIndex + size;
+    const currentPosts = filteredPostList.slice(startIndex, endIndex);
+    setpostsPerPage(currentPosts);
+    setTotalPages(Math.ceil(filteredPostList.length / size));
+}, [filteredPostList, size, currentPage]); 
+   */
+  const deletepost = (id) => {
+    // Filter out the data with the specified ID
+    const updatedPostList = filteredPostList.filter((post) => post.postId !== id);
+    // console.log(posts)
+    // Save the updated data to localStorage
+    localStorage.setItem('createPost', JSON.stringify(updatedPostList));
+    
+    // Update the state to reflect the deletion
+    //setPosts(updatedPostList);
+    setFilteredPostList(updatedPostList);
+  };
+  const handleSearch = () => {
+    // Filter data based on search query
+    const newFilteredPostList = filteredPostList.filter(
+      (post) =>
+        post.postName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.postCategory.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    setFilteredPostList(newFilteredPostList);
+    setCurrentPage(1);
+  };
+
+ const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  } 
+
+  const handleSort = (criteria) => {
+    let sortedList = [...filteredPostList];
+
+    switch (criteria) {
+      case 'name':
+        sortedList.sort((a, b) => a.postName.localeCompare(b.postName));
+        break;
+      case 'newest':
+        sortedList.sort((a, b) => new Date (b.submissionTime) - new Date (a.submissionTime));
+        break;
+      case 'oldest':
+        sortedList.sort((a, b) => new Date (a.submissionTime) - new Date (b.submissionTime));
+        break;
+      default:
+        break;
+    }
+
+    setFilteredPostList(sortedList);
+    setSortCriteria(criteria);
+  }; 
+    
+
+    return <div className="table-container">
+    <div className="search-list-container">
+    <input type="text" placeholder="Search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
+    <button className="search-btn" type="submit" onClick={handleSearch}><FontAwesomeIcon icon={faMagnifyingGlass} size="lg" style={{color: "#000000",}} /></button>
+    <select name="sort" id="sort" value={sortCriteria} onChange={(e)=>handleSort(e.target.value)}>
+        <option value="">Sort by</option>
+        <option value="name">Name</option>
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+    </select>
+    <button className="red-btn" onClick={()=>{navigate("/create-post")}}>Create Post</button>
+    </div>
+    <div>
+      <table className="table" >
+        <thead>
+            <tr>
+                <th>Post Name</th>
+                <th>Published Date</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+          {postsPerPage.map((post,index) => (
+            <React.Fragment key={post.postId}>
+            <tr style={rowStyle}>
+                <td>
+                    {post.postName}
+                </td>
+                <td>
+                    {post.submissionTime}
+                </td>
+                <td>
+                    {post.postCategory}
+                </td>
+                <td>
+                <button style={buttonStyle} onClick={() => deletepost(post.postId)}>
+                <FontAwesomeIcon icon={faTrash} size="lg" style={{color: "#0a0a0a",}} />
+                </button>{' '}
+                |{' '}
+                <Link to={`/edit-post/${post.postId}`}>
+                  <button style={buttonStyle}><FontAwesomeIcon icon={faPenToSquare} size="lg" style={{color: "#000000",}} /></button>
+                </Link>
+                      
+                </td>
+              </tr>
+              {index !== filteredPostList.length-1 && (
+                <tr style={{height:'0.5px', backgroundColor:'#ccc'}}>
+                    <td colSpan="4"></td>
+                </tr>
+              )}
+              </React.Fragment>
+          ))}
+        </tbody>
+      </table>
+      <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={setCurrentPage}/>
+    </div>
+    </div>
+  
+}
+
+
+
+export default PostList;

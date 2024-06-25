@@ -1,0 +1,141 @@
+.hamburger{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;;
+    border:none;
+    background: none; 
+    cursor: pointer;
+}
+.close-button{
+    border:none;
+    background-color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-right:20px;
+    cursor: pointer;
+}
+.close-button:hover{
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height:30px;
+}
+.hamburger-info{
+    padding:10px 20px;
+    padding-bottom: 0px;
+    background-color: white;
+    width:25.5%;
+    z-index:100;
+    padding-left: 10px;
+    top:0;
+    bottom:0;
+    right:0;
+    margin-bottom: 0px;
+    position: fixed;
+    
+}
+.info{
+    padding:10px;
+}
+.info-link{
+    padding:10px;
+}
+.info-link li{
+    display: block;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.container1{
+    max-width: 100%;
+    height:90%;
+    margin: auto;
+    overflow-x: hidden;
+}
+.subscribe{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    padding:30px 15px;
+    border:none;
+    border-radius: 5px;
+    background: #dbf1f5;
+    text-align: center;
+}
+.para{
+    margin-bottom: 0px;
+}
+.subscribe h2{
+    margin:0px;
+    padding:10px;
+}
+.para1{
+    padding:10px;
+    margin:0px;
+}
+.btn-subscribe{
+    border:none;
+    background: #ffcd2a;
+    border-radius: 5px;
+    margin:10px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+.btn-subscribe:hover{
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px grey;
+    transform: scale(1.05);border-radius: 5px;
+    box-shadow: 6px 6px 10px grey;
+    transform: scale(1.05);
+}
+.para2{
+    padding-left:10px;
+    margin-bottom:0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.para3{
+    padding-left:10px;
+    margin-top:10px;
+    font-size: 14px;
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+.hamburger-info{
+    width:100%;
+    overflow-x: hidden;
+    padding: 0;
+}
+.show-hamburger{
+    transform: translateX(0);
+}
+}

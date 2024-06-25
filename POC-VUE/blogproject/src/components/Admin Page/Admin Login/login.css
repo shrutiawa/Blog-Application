@@ -1,0 +1,90 @@
+.login-container, h1, p, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message{
+    color:#FF0000;
+    margin-bottom: 20px;
+}
+.login {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.login img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.login h1 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login p:not(.error-message) {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email,
+.password,
+.checkbox {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.email input,
+.password input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+.signin{
+    width: 100%;
+}
+.signin button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.signin button:hover{
+    background-color: #3ae1ff;
+    cursor: pointer;
+    color: #000;
+}
+
+

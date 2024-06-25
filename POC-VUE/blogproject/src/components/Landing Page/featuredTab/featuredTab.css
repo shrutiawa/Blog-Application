@@ -1,0 +1,193 @@
+.container{
+    display:grid;
+    max-width:1200px;
+    margin:10px auto ;
+    background-color:white ;
+    grid-template-columns:repeat(4,23.75%) ;
+    grid-template-rows: repeat(2,48%);
+    box-sizing: border-box;
+
+    gap: 1.6%;    
+
+}
+.content1{
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.image1 a{
+    margin-top: 7px;;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.image2 a, .image3 a,.image4 a{
+    margin-top: 7px;;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.image2 div,.image3 div,.image4 div{
+    color: white;
+    font-size: 16px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile ul{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    list-style-type: disc;
+    color: white;
+    margin-left: 0px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.profile ul li:first-child{
+    list-style-type:none ;
+}
+.content1 .profile img{
+    height:30px;
+    width:30px;
+    box-sizing: border-box;
+
+   border-radius: 50%;
+
+}
+.content1 .red-label{
+    font-size: 12px;
+    align-items: center;
+    height: auto;
+    padding: 3px 6px;
+    box-sizing:border-box;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.image1 .red-label{
+    margin-top: 250px;  
+    
+}
+
+
+.image2 ul,.image3 ul,.image4 ul{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    padding-left: 0px;
+    margin-left: 0px;
+    font-size: 12px;
+}
+.image2 ul li:first-child,.image3 ul li:first-child,.image4 ul li:first-child{
+    list-style-type: none;
+}
+.image1{
+    grid-row:1/span 2 ;
+    grid-column:1/span 2 ;
+    /* background-image: url(../../public/images/01.jpg); */
+    background-position: 90%;
+    box-shadow: 0px -100px 100px black inset ;
+    
+}
+
+.image2{
+    grid-row:1/2 ;
+    grid-column:3/span 2 ;
+    /* background-image: url(../../public/images/02.jpg); */
+    background-position: 50%;
+    box-shadow: 0px -50px 50px black inset ;
+    position: relative;
+}
+
+.image3{
+    grid-row:2/3 ;
+    grid-column:3/4 ;
+    /* background-image: url(../../public/images/03.jpg); */
+    box-shadow: 0px -50px 50px black inset ;
+    position: relative;
+}
+.image4{
+    grid-row:2/3 ;
+    grid-column:4/5 ;
+    /* background-image: url(../../public/images/04.jpg); */
+    box-shadow: 0px -50px 50px black inset ;
+    position: relative;
+}
+.image1 .div{
+    position: relative;
+    bottom:20px;
+}
+.image4 .div,.image3 .div,.image2 .div {
+    position: absolute;
+    left:20px;
+    bottom:20px;
+}
+
+@media (max-width: 768px) {
+    
+    .main-container{
+        width: 95%;
+    }
+    .footer-container{
+      width: 95%;
+    }
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows:auto;
+        height: auto;
+        padding: 5px;
+        width: 97%;
+        margin: 2%;
+    }
+    .content1,.image1,.image2,.image3,.image4{
+        grid-row: auto;
+        grid-column: auto;
+        width: 100%;
+        
+        font-size: 14px;
+    }
+    .image1 .red-btn{
+        margin-top: 280px;  
+    }
+    .image1 a div:first-of-type{
+        font-size: 30px;
+    }
+    .image2,.image3,.image4{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: 90%; 
+    }
+    .profile{
+        display:none;
+    }
+    .image2 ul,.image3 ul,.image4 ul{
+        display: none;
+    }
+    .image2 div,.image3 div,.image4 div{
+        font-size: 27px;
+    }
+    .content1 .profile img{
+        height: 20px;
+        width:20px;
+    }
+
+} 

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .post-container{
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .dorm-container{
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .dorm-container input, .dorm-container textarea{
+    padding: 15px;
+  }
+  /* Form Styling */
+  .post-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post-navigation button{
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #FA8305;
+    color: #fff;
+  }
+  .post-navigation button:hover{
+    background-color: crimson;
+    cursor: pointer;
+  }
+  .suggestions{
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  .post-name{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .post-description{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .post-image{
+    margin-top: 15px;
+  }
+  .post-image button{
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .post-image input{
+    margin-top: 10px;
+    padding: 10px 0;
+    margin-left: 5px;
+    width: 40%;
+  }
+  .post-body{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .type-category{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    gap: 10%
+  }
+  .type-category select{
+    padding: 10px;
+  }
+  .post-type{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .post-category{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .post-featured input{
+    margin-left: 0;
+    height: 15px;
+    width: 15px;
+  }
+  .submit-btn{
+    display: block;
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: #3551C3;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .submit-btn:hover{
+    background-color: #62B5FF;
+    color: #000;
+  }
+
+
+
+

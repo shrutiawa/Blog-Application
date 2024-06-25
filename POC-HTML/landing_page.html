@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2f2b86bc7e.js" crossorigin="anonymous"></script>
+    <title>Home Page | Blogger</title>
+    <link rel="shortcut icon" href="images/blog-favicon.png" type="image/x-icon" />
+    <script src="lib/jquery-3.7.1.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style/header-footer.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <header class="header">
+            <img id="logo" src="images/headerlogo.png" alt="">
+            <div>
+   
+
+                <button class="search-landing">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </button>
+                <button class="hamburger">
+                    <i class=" menu fa-solid fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </header>
+        <!--First image content-->
+        <div class="container">
+            <div class="content1 image1">
+                <div class="div">
+                    <button class="red-btn"> <i class="fa-solid fa-circle fa-2xs " style="color: #f7f7f7;"></i>
+                        Lifestyle</button>
+                    <a href="detail.html">
+                        <div>Ten tell-tale signs you need to get a new startup</div>
+                    </a>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt? Lorem ipsum
+                        dolor sit amet.</div>
+                    <div class="profile">
+                        <img src="images/user-1.jpg" alt="">
+                        <ul>
+                            <li>by Louis</li>
+                            <li>Nov 15, 2022</li>
+                            <li>5 min read</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content1 image2">
+                <div class="div">
+                    <button class="red-btn"> <i class="fa-solid fa-circle fa-2xs" style="color: #000000;"></i>
+                        Technology</button>
+                    <div>Best Pinterest boards for learning about business</div>
+                    <ul>
+                        <li>by Bryan</li>
+                        <li>Aug 18, 2022</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content1 image3">
+                <div class="div">
+                    <button class="red-btn"> <i class="fa-solid fa-circle fa-2xs " style="color: #f7f7f7;"></i>
+                        Business</button>
+                    <div>Five intermediate guide to business</div>
+                    <ul>
+                        <li>by Joan</li>
+                        <li>Jun 03, 2022</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content1 image4">
+                <div class="div">
+                    <button class="red-btn"> <i class="fa-solid fa-circle fa-2xs " style="color: #f7f7f7;"></i>
+                        Sports</button>
+
+
+                    <div>15 reasons to choose startup</div>
+                    <ul>
+                        <li>by Amanda</li>
+                        <li>Jan 28, 2022</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- Main Section Blog published from JSON file -->
+
+
+        <div class="main-section">
+            <div class="left">
+                <div class="icon">
+                    <div class="icon-container">
+                        <img class="image" src="images/icon.png" alt="icon">
+                        <p class="text">
+                        <h1>Today's top highlights</h1>
+                        </p>
+                    </div>
+                    <h5>Latest breaking news,pictures,videos,and special reports</h5>
+                </div>
+                <!-- Data getting fetched from JSON File -->
+                <div class="images"></div>
+
+                <div class="button">
+
+
+                    <button>Load more post <img src="images/arrow.jpg" alt="arrow"></button>
+                </div>
+            </div>
+            <!--Recent post Section and Advertisment-->
+
+            <div class="right">
+                <div class="recent-post">
+                    <h3> Recent post</h3>
+                    <div class="recent-post-item">
+                        <img src="images/3.png" alt="3">
+                        <div class="content-rp">
+                            <h5>The pros and cons of business agency</h5>
+                            <small>June 17,2023</small>
+                        </div>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="images/4.png" alt="4">
+                        <div class="content-rp">
+                            <h5>5 reasons why you shouldn't startup</h5>
+                            <small>July 07,2023</small>
+                        </div>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="images/5.png" alt="5">
+                        <div class="content-rp">
+                            <h5>Ten questions you should answer truthfully</h5>
+                            <small>August 22,2023</small>
+                        </div>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="images/6.png" alt="6">
+                        <div class="content-rp">
+                            <h5>Five unbelievable facts about money</h5>
+                            <small>September 18,2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertisement">
+                    <img src="images/7.png" alt="7">
+                    <small>ads via Blog</small>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <!-- Sponsered News Section -->
+        <div class="sponsered">
+            <div class="s-container">
+                <img src="./images/icon-2.png" alt="icon">
+                <h2> Sponsered news</h2>
+
+            </div>
+            <div class="rp-content">
+                <div class="s1 image-hover">
+                    <div class="rp-card-img1">
+
+                        <img src="images/2.png" alt="">
+
+
+                        <button class="image1-btn"><i class="fa-solid fa-circle fa-2xs" style="color: #000000;"></i>
+                            Technology</button>
+
+
+
+                    </div>
+                    <div class="rp-card-content">
+                        <h3>10 tell-tale signs you need to get a new business</h3>
+                        <div class="rp-card-content-about">
+                            <img src="images/profile-2.jpg" alt="">
+                            <p>by Bryan</p>&bull;
+                            <p>Jan 01,2023</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="s2 image-hover">
+                    <div class="rp-card-img2">
+
+
+                        <img src="images/1.png" alt="">
+                        <button class="image2-btn"> <i class="fa-solid fa-circle fa-2xs " style="color: #ffffff;"></i>
+                            Marketing</button>
+
+
+                    </div>
+                    <div class="rp-card-content">
+                        <h3>Best Pinterest Boards for learning about business</h3>
+                        <div class="rp-card-content-about">
+                            <img src="images/profile-3.jpg" alt="">
+                            <p>by Aryan</p>&bull;
+                            <p>June 22,2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s3 image-hover">
+                    <div class="rp-card-img3">
+
+                        <img src="images/9.png" alt="">
+                        <button class="image3-btn"><i class="fa-solid fa-circle fa-2xs" style="color: #ffffff;"></i>
+                            Sports</button>
+                    </div>
+                    <div class="rp-card-content">
+                        <h3>Skills that you can learn from business</h3>
+
+                        <div class="rp-card-content-about">
+                            <img src="images/profile-2.jpg" alt="">
+                            <p>by Ram</p>&bull;
+                            <p>Sept 11,2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s4 image-hover">
+                    <div class="rp-card-img4">
+
+
+                        <img src="images/11.png" alt="">
+                        <button class="image4-btn"><i class="fa-solid fa-circle fa-2xs" style="color: #ffffff;"></i>
+                            Marketing</button>
+
+                    </div>
+                    <div class="rp-card-content">
+                        <h3>10 tell-tale signs you need to get a new business</h3>
+                        <div class="rp-card-content-about">
+                            <img src="images/profile-3.jpg" alt="">
+                            <p>by Sambram</p>&bull;
+                            <p>Jul 11,2023</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Main Footer Content-->
+
+    <div class="ref">
+        <div class="footer-container">
+            <div class="ref1">
+                <img id="logo" src="images/mainlogo.png" alt="Logo">
+                <section>
+                    <div id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis aut
+                        laudantium ipsum suscipit optio fugiat, inventore repellat culpa architecto, quis odit autem
+                        praesentium asperiores!</div>
+                    <div id="subscribe">
+                        <form id="sub">
+
+                            <input id="email" type="email" required placeholder="Enter your email address">
+                            <button class="red-btn"><b>Subscribe</b></button>
+                        </form>
+                        <div class="text2">By subscribing you agree to our <u>Privacy Policy</u></div>
+                    </div>
+                </section>
+            </div>
+            <hr color="grey">
+            <div class="ref2">
+                <div class="ref2-heading">
+                    Recent post
+                    <div id="post">
+                        <button class="red-btn"> <i class="fa-solid fa-circle fa-2xs " style="color: #f7f7f7;"></i>
+                            Business</button>
+                        <div>Up-coming business bloggers, you need to watch</div>
+                        <div>by Dennis - Apr 06,2022</div>
+                    </div>
+                    <div id="post">
+                        <button class="red-btn"> <i class="fa-solid fa-circle fa-2xs " style="color: #f7f7f7;"></i>
+                            Marketing</button>
+                        <div>How did we get here? The history of <br>the business told through tweets</div>
+                        <div>by Larry - May 29,2022</div>
+                    </div>
+
+                </div>
+                <div class="ref2-heading">
+                    Navigation
+                    <div class="list">
+                        <section>
+                            <div>Features</div>
+                            <div>Style Guide</div>
+                            <div>Contact us</div>
+                            <div>Get Theme</div>
+                            <div>Support</div>
+                            <div>Privacy Policy</div>
+                            <div>Newsletter</div>
+                        </section>
+                        <section>
+                            <div>News</div>
+                            <div>Career <button class="red-btn">2 Job</button></div>
+                            <div>Technology</div>
+                            <div>Startups</div>
+                            <div>Gadgets</div>
+                            <div>Inspiration</div>
+                        </section>
+                    </div>
+                </div>
+                <div class="ref2-heading">
+                    Get Regular updates
+                    <div class="list">
+                        <section>
+                            <div><i class="fa-brands fa-whatsapp fa-sm" style="color: #ffffff;"></i> Whatsapp</div>
+                            <div><i class="fa-brands fa-youtube fa-sm" style="color: #ffffff;"></i> YouTube</div>
+                            <div><i class="fa-solid fa-bell fa-sm" style="color: #ffffff;"></i> Website Notifications
+                            </div>
+                            <div><i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i> Newsletters</div>
+                            <div><i class="fa-solid fa-headphones-simple fa-sm" style="color: #ffffff;"></i> Podcasts
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="ref2-heading">
+                    Our mobile App
+                    <div>
+                        Download our App and get the latest Breaking News Alerts and latest headlines and daily articles
+                        near you.
+                    </div>
+                    <div>
+                        <img src="images/appstore.png" alt="">
+                        <img src="images/googleplay.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ref3">
+                <div class="ref3-heading">Hot Topics</div>
+                <div class="topics">
+                    <div>Covid-19</div>
+                    <div>Politics</div>
+                    <div>Entertainment</div>
+                    <div>Media</div>
+                    <div>Royalist</div>
+                    <div>World</div>
+                    <div>Half full</div>
+                    <div>Scouted</div>
+                    <div>Travel</div>
+                    <div>Beast Inside</div>
+                    <div>Crossword</div>
+                    <div>Newsletters</div>
+                    <div>Podcasts</div>
+                    <div>Auction 2022</div>
+                    <div>Protests</div>
+                    <div>News Cyber</div>
+                    <div>Education</div>
+                    <div>Sports</div>
+                    <div>Tech and Auto</div>
+                    <div>Option</div>
+                    <div>Share Market</div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer part -->
+        <footer>
+            <div id="footer">
+                <div>&copy 2023,Blogs. All Rights Reserved</div>
+                <div id="footer1">
+                    <div>English Edition</div>
+                    <div>Terms</div>
+                    <div>Privacy</div>
+                    <div>Cookies</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Hamburger Menu Content -->
+    <div class="overlay">
+        <div class="hamburger-info">
+            <div class="content">
+                <button class="close-button">
+                    <i class=" close fa-solid fa-xmark fa-xl"></i>
+                </button>
+            </div>
+            <div class="container1">
+                <div class="info">
+                    <p>The next generation blog, news and magazine theme for you to start sharing your stories today!!
+                    </p>https://github.com/IN-Valtech/CH_2023_FE_Team3/pull/45/conflict?name=POC-HTML%252Flanding_page.html&base_oid=266586db62b9490a8258a678bc68d3735174be0b&head_oid=fb229189dc0de8343e6393bbe2ad588edf73056d
+                </div>
+                <div class="info-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+                <div class="subscribe">
+                    <p class="para">The Blog</p>
+                    <h2>Save on Premium Membership</h2>
+                    <p class="para1">Get the insights report trusted by experts around the globe. Become a Member Today!
+                    </p>
+                    <button class="btn-subscribe">View pricing plans</button>
+                </div>
+                <p class="para2">New York, USA (HQ)</p>
+                <p class="para3">750 Sing Sing Rd, Horeseheads, NY, 14845</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

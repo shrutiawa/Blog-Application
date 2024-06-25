@@ -1,0 +1,11 @@
+.right {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .right{
+        margin: 0px;
+        width: 100%;
+    }        
+}

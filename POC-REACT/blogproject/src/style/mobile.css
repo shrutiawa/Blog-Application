@@ -1,0 +1,256 @@
+@media (max-width: 768px) {
+  /* landing page */
+    .main-container{
+        width: 95%;
+    }
+    .footer-container{
+      width: 95%;
+    }
+  .images{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    gap: 10px;
+  }
+
+    .left, .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .images {
+        grid-template-columns: 100%;
+    }
+    .sponsered {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:2px;
+    }
+    .recent-post,.advertisement,.s-container{
+        margin:0px;
+    }
+   .rp-content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+   }
+   .s1{
+    width:100%;
+   }
+   .s2,.s3,.s4{
+    display: none;
+   }
+    
+    .ref{
+        max-width: 100%;
+        /* height: 1300px; */
+        background-color: rgb(36, 35, 46);;
+        
+    }
+    .ref1{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        margin:0;
+        
+        align-items: flex-start;
+        
+    }
+    .ref1 #logo{
+        padding-left:0 ;
+    }
+    .ref1 section{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        justify-content: left;
+    }
+    #subscribe{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #subscribe .text2{
+        text-align: left;
+    }
+    #sub{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    #sub #email{
+        margin-top: 10px;
+        width:100%;
+        height:25px;
+    }
+    hr{
+        max-width: 96%;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+    .ref2{
+        display: flex;
+        flex-direction: column;
+        
+        gap:20px;
+    }
+    .ref2-heading{
+        margin-top: 20px;
+    }
+    .ref2-heading:nth-child(3),.ref2-heading:nth-child(4){
+        margin: 0;
+    }
+    .ref3{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 20px;
+      
+    }
+    
+    .topics,.topics div{
+        margin-top: 0;
+        text-align: left;
+        gap:2%;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 0;
+        width: auto;
+    }
+    footer #footer1{
+        display: none;
+    }
+    #footer div{
+       gap: 0;
+       margin: auto;
+    }
+    
+    .hamburger-info{
+        width:100%;
+        overflow-x: hidden;
+        padding: 0;
+    }
+    .show-hamburger{
+        transform: translateX(0);
+    }
+
+    /* detail page */
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        'main-header'
+        'left-sidebar'
+        'main-content'
+        'right-sidebar'
+      }
+      .main-header{
+        grid-area: main-header;
+      }
+      .main-content{
+        grid-area: main-content;
+      }
+      .left-sidebar hr{
+        display: none;
+      }
+      .right-sidebar{
+        grid-area: right-sidebar;
+        
+      }
+      .right-sidebar-img{
+        margin-top: 5px;
+        width: 100%
+      }
+      .left-sidebar{
+        grid-area: left-sidebar;
+        display: block;
+      }
+      .left-sidebar-content p{
+        display:inline-flex;
+        text-align: left;
+        padding-right: 5px;
+      }
+      .left-sidebar-content i{
+        align-items: center;
+      }
+      .main-header > *{
+        text-align: left;
+        line-height: 1.7em;
+        margin-top: 10px;
+      }
+      .section-2-para{
+        flex-direction: column;
+        gap: 0;
+      }
+      .section-2-img{
+        flex-direction: column;
+      }
+      .section-2-img img{
+        width: 100%;
+      }
+      .section-2-para > p{
+        width: 100%;
+      }
+      .section-3-img{
+        width: 50%;
+      }
+      .at-about-editor{
+        flex-direction: column;
+        align-items: start;
+      }
+      .section-4{
+        flex-direction: column;
+        width: 100%;
+      }
+      .section-4 .hcard-1{
+        border: none;
+      }
+      .author-testimonial .at-img{
+        width: 30%;
+        margin: 10px auto;
+      }
+      .author-testimonial .at-content{
+        width: 60%;
+        margin: 0 10px;
+      }  
+      .author-testimonial .at-about{
+        flex-direction: column;
+        display: block;
+      }
+      .related-post{
+        width: 100%;
+        flex-direction: column;
+      }
+      .rp-card1{
+        display: none;
+      }
+      .rp-card2{
+        width: 100%;
+      }
+      .rp-card-content-about{
+        display: none;
+        object-fit: cover;
+      }
+    .form-container{
+        display: block;
+      }
+      .name{
+        display: block;
+        padding:10px 0px;
+        width:100%;
+      }
+      .email{
+        display: block;
+        padding:10px 0px;
+        width:100%;
+      }
+}
